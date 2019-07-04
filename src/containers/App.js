@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
-import Aux from '../hoc/_Aux';
-import Layout from '../components/Layout/Layout';
+
+import Layout from '../hoc/Layout/Layout';
 import BurgerBuilder from '../containers/BurgerBuilder/BurgerBuilder';
 
-
 class App extends Component {
-
   render () {
     return (
-      <Aux>
+      <div>
         <Layout>
           <BurgerBuilder />
         </Layout>
-      </Aux>
+      </div>
     );
-    // return React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'Does this work now?'));
   }
 }
 
