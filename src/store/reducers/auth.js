@@ -4,7 +4,7 @@ import { updateObject } from '../../shared/utility';
 
 const initialState = {
   token: null,
-  useiId: null,
+  userId: null,
   error: null,
   loading: false,
   authRedirectPath: '/'
@@ -39,6 +39,7 @@ const setAuthRedirectPath = (state, action) => {
 }
 
 const reducer = (state = initialState, action) => {
+  console.log(state)
   switch (action.type) {
     case actionTypes.AUTH_START: return authStart(state, action);
     case actionTypes.AUTH_SUCCESS: return authSuccess(state, action);
